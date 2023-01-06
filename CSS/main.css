@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 30px 0;
+  background-color: black;
+  font-family: nasalization,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body p {
+  font-family: nasalization,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body h1 {
+  color: white;
+}
+
+body .background-video {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+#canvas1 {
+  border: 5px solid white;
+  border-radius: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#player, #background {
+  display: none;
+}
+
+.canvas-header {
+  text-align: center;
+  margin: 3rem;
+}
+
+.gallery-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4em 0;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.gallery-section h1 {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.gallery-section .row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-section .row .rounded {
+  border: 3px solid #4b4b4b;
+}
+
+.gallery-section .hover-image {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.gallery-section .hover-image figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.gallery-section .hover-image figcaption p {
+  color: white;
+}
+
+.gallery-section .hover-image::before, .gallery-section .hover-image::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: scaleY(2);
+          transform: scaleY(2);
+}
+
+.gallery-section .hover-image:hover::before, .gallery-section .hover-image:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.gallery-section .hover-image:hover figcaption {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */

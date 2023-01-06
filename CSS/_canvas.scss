@@ -1,0 +1,16 @@
+#canvas1 {
+    border: 5px solid white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+#player, #background {
+    display: none;
+}
+
+.canvas-header {
+    text-align: center;
+    margin: 3rem;
+}

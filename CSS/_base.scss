@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    margin: 30px 0;
+    background-color: black;
+    font-family: nasalization,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    p {
+        font-family: nasalization,sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+    }
+    h1 {
+        color: white;
+        
+    }
+
+    .background-video {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        filter: opacity(0.5);
+        
+    }
+}
